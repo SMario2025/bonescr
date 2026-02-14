@@ -1,0 +1,35 @@
+# Claim settings
+price-per-claim: 2500
+max-claims-per-player: 5
+
+# Build rules:
+# If true, players may ONLY build/break inside chunks they own (or are trusted in).
+# Unclaimed chunks are fully protected (everything already built is safe).
+only-build-in-owned-land: true
+
+# Players with this permission can build anywhere without claiming land:
+global-build-permission: "bonescraft.land.globalbuild"
+
+# Optional: Require a permission to build even inside owned land
+require-permission-to-build: false
+build-permission: "bonescraft.land.build"
+
+# Interactions (doors, buttons, levers etc.) in claimed land:
+protect-interactions: true
+
+# Containers can be opened by anyone, but item-taking can be blocked:
+containers-open-for-everyone: true
+protect-containers: true
+
+# Permission to take/move items out of containers you don't own/trust
+loot-permission: "bonescraft.land.loot"
+
+# Playtime tracking
+playtime:
+  autosave-seconds: 300   # saves playtime.yml every 5 minutes
+
+messages:
+  prefix: "&8[&6BonesLand&8]&r "
+  no-build: "&cDu darfst nur in deinem eigenen Land bauen."
+  no-break: "&cDu darfst nur in deinem eigenen Land abbauen."
+  no-loot: "&cDu darfst hier nur schauen – kein Rang zum Entnehmen."

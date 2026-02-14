@@ -1,0 +1,28 @@
+name: BonescraftLand
+version: 1.3.0
+main: de.bonescraft.land.BonescraftLand
+api-version: "1.21"
+author: Bonescraft
+commands:
+  land:
+    description: Land/Claim System
+    usage: /land
+  playtime:
+    description: Shows monthly playtime
+    usage: /playtime [player|top]
+permissions:
+  bonescraft.land.use:
+    default: true
+  bonescraft.land.claim:
+    default: op
+  bonescraft.land.globalbuild:
+    default: op
+  bonescraft.land.loot:
+    default: op
+  bonescraft.land.admin:
+    default: op
+
+  bonescraft.playtime.view:
+    default: true
+  bonescraft.playtime.admin:
+    default: op
